@@ -51,10 +51,13 @@ For the models comparison I choose ROC-AUC measure and F1-score.
 Looking only on the graph it is hard to say which model is the best. Only the exact AUC scores show which models are better and which are worse.
 
 | Method             | AUC      |         | Method            | F1 Score  |
-|--------------------|----------|------------------------|-------------------|-----------|
+|--------------------|----------|---------|-------------------|-----------|
 | KNN                | 0.846230 |         | Gradient Boost    | 0.758621  |
 | Gradient Boosting  | 0.845642 |         | KNN               | 0.748538  |
 | Linear Regression  | 0.844058 |         | Decision Tree     | 0.743590  |
 | Random Forest      | 0.836863 |         | SVM               | 0.737500  |
 | Decision Tree      | 0.819395 |         | Random Forest     | 0.737500  |
 | SVM                | 0.816273 |         | Linear Regression | 0.728324  |
+
+In summary, the best methods are K-nearest neighbours and Gradient boost, beacause both methods have the best AUC and F1 scores.
+
