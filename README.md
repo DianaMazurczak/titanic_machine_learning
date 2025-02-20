@@ -1,9 +1,9 @@
-# Titanic - binary classification problem
+# :ship: Titanic - binary classification problem
 
-## Purpose of the work
+## :pushpin: Purpose of the work
 In my work I would like to compare a few simple classification models, which are designed to predict which passengers have survived. 
 
-## Methods used for classification:
+## :small_blue_diamond: Methods used for classification:
 * Logistic regression
 * KNN - K-Nearest Neighbors
 * SVM - Support Vector Machines
@@ -11,7 +11,7 @@ In my work I would like to compare a few simple classification models, which are
 * Random Forest
 * Gradient Boosting
 
-## EDA - Exploratory data analysis
+## :small_blue_diamond: EDA - Exploratory data analysis
 
 Data contains 12 features. At the begining I deleted 4 of them: PassangerId, Name, Ticket and Cabin. First three features are not important in case of classification. 
 Last variable has many missing values (96,5% off all passangers). I think this is because some passengers didn't have a cabin, but I decided to remove this information from the dataset anyway.
@@ -36,13 +36,14 @@ Looking at the correlation matrix the biggest impact on Survived variable has: S
 The data was split into a training and test set in a 7:3 ratio.
 The data were on different scales, so I used StandardScaler to change them so that the mean was 0 and the standard deviation was 1.
 
-## Choosing parameters
+## :small_blue_diamond: Choosing parameters
 
 For KNN, SVM and Random Forest I use GridSearchCV for searching the best results. 
 When working with decision trees, I concentrated on finding the optimal value of maximum depth for each tree. The plot below makes it clear that the best value is 4, because for bigger values model is overfitting.
+
 ![image](https://github.com/user-attachments/assets/becbe915-894a-4953-9ceb-4330db1ada00)
 
-## Comparison of results
+## :small_blue_diamond: Comparison of results
 
 For the models comparison I choose ROC-AUC measure and F1-score.
 
